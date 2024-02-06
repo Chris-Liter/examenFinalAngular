@@ -1,0 +1,25 @@
+<div>
+    <label>Recargar</label>
+    <div>
+        <label for="telefono">Numero de telefono</label>
+        <input id="telefono" name="telefono" [(ngModel)]="cuenta.telefono">
+        <label for="operador">Operador</label>
+        <select id="operador" name="operador" [(ngModel)]="cuenta.operador">
+            <option value="Tuenti">Tuenti</option>
+            <option value="Claro">Claro</option>
+            <option value="Movistar">Movistar</option>
+            <option value="CNT">CNT</option>
+        </select>
+
+        <label for="recarga">Valor a Recargar</label>
+        <input type="number" name="recarga" id="recarga" [(ngModel)]="valor">
+        <button (click)="realizarRecarga()">Recargar</button>
+        <label *ngIf="exito">Se a realizado la recarga con exito</label>
+        <label *ngIf="estado">No se a podido realizar la recarga, intentalo en un minuto</label>
+        <div *ngIf="camposVacios" class="alert alert-warning alert-message" role="alert">
+            Debes llenar todos los campos antes de realizar la recarga.
+          </div>
+          
+          
+    </div>
+</div>

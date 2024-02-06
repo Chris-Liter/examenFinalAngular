@@ -1,0 +1,51 @@
+/* Estilo para el contenedor principal */
+div {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para el título "Perfil del jefe" */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFA500; /* Color naranja */
+  }
+  
+  /* Estilo para la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilo para las celdas de encabezado */
+  th {
+    background-color: #FFA500; /* Color naranja */
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Estilo para las filas impares */
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para las filas al pasar el ratón */
+  tbody tr:hover {
+    background-color: #e6f7ff;
+  }
+  

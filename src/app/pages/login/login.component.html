@@ -1,0 +1,19 @@
+<div>
+    <div>
+        <h1>Estado del jefe</h1>
+        <div>
+            <table>
+                <thead >
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>Dinero del jefe</th>
+                </thead>    
+                <tbody *ngFor="let i of jefe">
+                    <td>{{i.nombre}}</td>
+                    <td>{{i.dni}}</td>
+                    <td>{{i.monto}}</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

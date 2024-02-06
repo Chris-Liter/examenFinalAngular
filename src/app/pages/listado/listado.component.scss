@@ -1,0 +1,59 @@
+// Estilos para el contenedor principal
+div {
+    margin: 20px;
+  
+    // Estilos para el contenedor interno
+    > div {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+      // Estilos para el título "Selecciona un cliente para consultar su cuenta"
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+  
+      // Estilos para las tablas
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+  
+        // Estilos para los encabezados de las tablas
+        th {
+          background-color: green;
+          color: #fff;
+          padding: 10px;
+          text-align: left;
+        }
+  
+        // Estilos para las celdas de las tablas
+        td {
+          padding: 10px;
+          border-bottom: 1px solid #ccc;
+        }
+  
+        // Estilos para las celdas de las tablas cuando se hace clic
+        td:hover {
+          background-color: #f0f0f0;
+          cursor: pointer;
+        }
+      }
+  
+      // Estilos para el título "Cuenta del cliente"
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .red-text {
+    color: red;
+  }
+  
+  .red-background {
+    background-color: red;
+  }
+  

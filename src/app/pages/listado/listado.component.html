@@ -1,0 +1,32 @@
+<div>
+    <div>
+        <h3>Selecciona un cliente para consultar su cuenta</h3>
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Cedula</th>
+            </thead>
+            <tbody *ngFor="let i of clientes">
+                <td (click)="select(i.id)">{{i.nombre}}</td>
+                <td (click)="select(i.id)">{{i.dni}}</td>
+            </tbody>
+        </table>
+
+        <div>
+            <h1>Cuenta del cliente</h1>
+            <table>
+                <thead>
+                    <th>Saldo</th>
+                    <th>Telefono</th>
+                    <th>Operadora</th>
+                </thead>
+                <tbody *ngFor="let i of cuenta">
+                    <td >{{i.monto}}</td>
+                    <td >{{i.telefono}}</td>
+                    <td>{{i.operador}}</td>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
